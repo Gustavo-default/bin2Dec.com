@@ -1,0 +1,143 @@
+body {
+    align-content: start;
+    background-color: #F7F9F9;
+    font-family: 'Roboto mono', monospace;
+    font-size: 1em;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {height: fit-content;}
+header h1{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    padding: 2vh 0px;
+    width: 100vw;
+}
+main {
+    align-content: start;
+    background-color: #F2F3F4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    padding: 2vw 0px;
+    width: 60vw;
+}
+.bin_Dec {
+    border: 0px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    height: fit-content;
+    margin: 0px 5vw;
+    padding: 0.5vw 0.7vw;
+    width: 50vw;
+}
+input:focus, button:focus {
+    outline: none;
+}
+span {
+    text-align: left;
+    margin: 0px 0px 0.5vh 0px;
+    width: 50vw;
+}
+.botao {
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: 'Roboto mono', monospace;
+    font-size: 1.3em;
+    height: fit-content;
+    margin: 1vw 1vw 0px 1vw;
+    padding: 0px 1vh;
+    width: fit-content;
+}
+section {width: 60vw;}
+/*.exemplo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exemplo h3{width: 60vw;}
+.exemplo td{
+    text-align: center;
+    font-size: fit-content;
+}
+.exemplo sup {font-size: 0.6em;}
+.exemplo table tbody :nth-child(2) td {font-weight: bold;}
+.exemplo table tbody :nth-child(3) td {font-size: 0.99em;}
+.exemplo table tbody :nth-child(5) td {
+    font-size: 1.2em;
+    font-weight: bold;
+}*/
+@media screen and (max-width: 800px) {
+    * {
+        font-size: 1.1em;
+    }
+    header h1 {font-size: 2em;}
+    main {
+        height: fit-content;
+        padding: 2vh 2vw;
+        width: 90vw;
+    }
+    main :nth-child(3), main :nth-child(4) {order: 4;}
+    .bin_Dec {
+        font-size: 1.5em;
+        height: fit-content;
+        margin: 0px;
+        width: 88vw;
+    }
+    #bin {
+        margin: 0px 0px 0.5vh 0px;
+    }
+    .alt {
+        text-align: left;
+        width: 88vw;
+    }
+    .botao {
+        font-size: 1.3em;
+        margin: 2vh 1vw 0px 1vw;
+        padding: 0.5vh 1vw;
+    }
+    section {
+        height: fit-content;
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 479px){
+    * {font-size: 1em;}
+    header h1 {
+        font-size: 1.7em;
+    }
+    main {
+        height: fit-content;
+        padding: 2.5vh 2vw;
+        width: 90vw;
+    }
+    main :nth-child(3), main :nth-child(4) {order: 4;}
+    .bin_Dec {
+        font-size: 1.5em;
+        height: fit-content;
+        margin: 0px;
+        width: 88vw;
+    }
+    span {
+        text-align: left;
+        width: 88vw;
+    }
+    .botao {
+        font-size: 1.2em;
+        margin: 2.5vh 1vw 0px 1vw;
+        padding: 0.5vh 1vw;
+    }
+    section {
+        height: fit-content;
+        width: 90vw;
+    }
+}
